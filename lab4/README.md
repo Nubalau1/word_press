@@ -23,79 +23,100 @@ Plugin WordPress educațional care adaugă o secțiune „Notițe" cu priorită�
 
 **Pașii realizați:**
 
-- **Pasul 1** — Pregătirea mediului: 
+**Pasul 1** — Pregătirea mediului: 
 
 Am creat directorul `usm-notes` în `wp-content/plugins/`
+
 ![](images/1.png)
 
 Am activat `WP_DEBUG`
+
 ![](images/2.png)
 
-- **Pasul 2** 
+**Pasul 2** 
 
 Am creat fișierul principal `usm-notes.php` cu metadatele pluginului.
+
 ![](images/3.png)
 
 Am verificat ca este vizibil in pagina plugins
+
 ![](images/4.png)
 
 Am activat pluginul
+
 ![](images/5.png)
 
-- **Pasul 3** 
+**Pasul 3** 
 
 Am adaugat o functie pentru inregistrarea CPT „Notite" cu `register_post_type()`, cu suport pentru titlu, editor, autor, miniatură și pagină de arhivă.
+
 ![](images/6.png)
 
-- **Pasul 4** 
+**Pasul 4** 
 
 Am adaugat o functie pentru inregistrarea taxonomiei „Prioritate" cu `register_taxonomy()`, legată de CPT-ul „Notite".
+
 ![](images/7.png)
 
-- **Pasul 5** 
+**Pasul 5** 
 
 Am creat o funcție pentru adăugarea unui metabox în editorul CPT „Notițe” folosind add_meta_box()
+
 ![](images/8.png)
 
 Conținutul metabox-ului (câmpul de dată)
+
 ![](images/9.png)
 
 Salvarea datei cu save_post, verificare nonce si validarea datei
+
 ![](images/10.png)
 
 Afișarea mesajului de eroare
+
 ![](images/11.png)
 
 Am afișat data de reamintire în lista postărilor CPT „Notițe” din admin.
+
 ![](images/12.png)
 
-- **Pasul 6**
+**Pasul 6**
 
 Am creat o funcție pentru procesarea shortcode-ului `[usm_notes priority="X" before_date="YYYY-MM-DD"]`
+
 ![](images/13.png)
 
 Am adăugat filtrele după prioritate și dată folosind `tax_query` și `meta_query` în `WP_Query`
+
 ![](images/14.png)
 
 Am înregistrat shortcode-ul folosind `add_shortcode()` și am gestionat cazul când nu există notițe
+
 ![](images/15.png)
 
 Am adăugat stiluri pentru afișarea listei de notițe
+
 ![](images/16.png)
 
-- **Pasul 7** 
+**Pasul 7** 
 
 ![](images/20.png)
 
 Am adăugat 5-6 notițe cu priorități și date de reamintire diferite
+
 ![](images/17.png)
 
 Am creat pagina „All Notes" cu shortcode-urile necesare
+
 ![](images/18.png)
 
 Am verificat afișarea corectă pe frontend
+
 ![](images/19.png)
+
 ![](images/19.5.png)
+
 ---
 
 ## 3. Răspunsuri la întrebările de control

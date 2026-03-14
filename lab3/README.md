@@ -22,64 +22,82 @@ Pentru tema mai avansata, cu design mai modern, copiati folderul **usm-theme-mod
 
 **Pașii realizați:**
 
- **Pasul 1** — Pregătirea mediului: 
+**Pasul 1** — Pregătirea mediului: 
 
 Am creat directorul `usm-theme` în `wp-content/themes/`
+
 ![](images/1.png)
 
 Am activat `WP_DEBUG` in `wp-config`.
+
 ![](images/2.png)
 
 **Pasul 2** — Crearea fișierelor obligatorii ale temei: 
 Am creat `style.css` cu metadatele temei
+
 ![](images/3.png)
 
 Am creat `index.php` cu structura HTML de bază.
+
 ![](images/4.png)
 
 **Pasul 3** — Componente comune: 
 Am creat `header.php` 
+
 ![](images/5.png)
 
 Am creat `footer.php`
+
 ![](images/6.png)
 
 Le-am incluse în `index.php` cu `get_header()` / `get_footer()` + afișarea ultimelor 5 postări prin bucla WordPress.
+
 ![](images/7.png)
 
 **Pasul 4** — Fișierul de funcții: 
 Am creat `functions.php` cu funcția de încărcare a stilurilor prin `wp_enqueue_style()`.
+
 ![](images/8.png)
 
 **Pasul 5** — Șabloane suplimentare: 
 Am creat `single.php` pentru afisarea unei singure postari
+
 ![](images/9.png)
 
 Am creat `page.php`pentru afisareapaginilor
+
 ![](images/10.png)
 
 Am creat `sidebar.php` pentru bara laterala
+
 ![](images/11.png)
 
 Am creat `comments.php`pentru afisarea comentariilor si l-am inclus in single.php si page.php
+
 ![](images/12.png)
 
 Am creat fisierul `archive.php` pentru arhivarea postarilor
+
 ![](images/13.png)
 
 **Pasul 6** — Stilizare CSS pentru antet, subsol, conținut și bara laterală.
+
 ![](images/14.png)
 
 **Pasul 7** — Am adaugat `screenshot.png` (1200×900px) pentru previzualizarea temei.
+
 ![](images/15.png)
 
 **Pasul 8** — Tema activată din **Appearance → Themes**.
+
 ![](images/16.png)
 
 Site simplu de baza
+
 ![](images/18.png)
 
 Site modificat
+
 ![](images/17.png)
 
 ![](images/19.png)
